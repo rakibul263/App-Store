@@ -1,0 +1,162 @@
+[
+  {
+    "id": "app001",
+    "name": "Programming Hero",
+    "developer": "Programming Hero Ltd.",
+    "thumbnail": "https://static.c.realme.com/IN/wm-thread/1583106315008446464.jpg",
+    "banner": "https://i.ibb.co/vj5rT68/programming-hero-banner.jpg",
+    "downloads": 3500000,
+    "category": "Education",
+    "rating": 4.8,
+    "description": "Programming Hero is a fun and interactive way to learn programming. Whether you're a beginner or looking to brush up your skills, this app makes learning to code exciting and practical.",
+    "features": [
+      "Interactive coding lessons",
+      "Real-world projects",
+      "Gamified learning experience"
+    ]
+  },
+  {
+    "id": "app002",
+    "name": "Notion",
+    "developer": "Notion Labs, Inc.",
+    "thumbnail": "https://static.vecteezy.com/system/resources/previews/049/116/729/non_2x/notion-icon-on-transparent-background-free-png.png",
+    "banner": "https://i.ibb.co/bsWHjgj/notion-banner.jpg",
+    "downloads": 8000000,
+    "category": "Productivity",
+    "rating": 4.9,
+    "description": "Notion is an all-in-one workspace for note-taking, project management, and collaboration.",
+    "features": [
+      "Customizable pages",
+      "Team collaboration",
+      "Database & Kanban support"
+    ]
+  },
+  {
+    "id": "app003",
+    "name": "Visual Studio Code",
+    "developer": "Microsoft",
+    "thumbnail": "https://i.ibb.co/xDQjXJG/vscode-thumb.png",
+    "banner": "https://i.ibb.co/P4scNkx/vscode-banner.jpg",
+    "downloads": 15000000,
+    "category": "Development",
+    "rating": 4.7,
+    "description": "VS Code is a lightweight but powerful source code editor which runs on your desktop.",
+    "features": [
+      "Built-in Git support",
+      "Extensions marketplace",
+      "Debugging and IntelliSense"
+    ]
+  },
+  {
+    "id": "app004",
+    "name": "CleanShot X",
+    "developer": "CleanShot App",
+    "thumbnail": "https://cleanshot.com/img/ogimage.png",
+    "banner": "https://i.ibb.co/4Jx0zZG/cleanshot-banner.jpg",
+    "downloads": 120000,
+    "category": "Utilities",
+    "rating": 4.9,
+    "description": "The best screenshot and screen recording app for macOS.",
+    "features": [
+      "Scrolling screenshots",
+      "Screen recording",
+      "Annotation tools"
+    ]
+  },
+  {
+    "id": "app005",
+    "name": "Magnet",
+    "developer": "CrowdCafé",
+    "thumbnail": "https://i.ibb.co/qjgVxVR/magnet-thumb.png",
+    "banner": "https://i.ibb.co/GQ9C4v9/magnet-banner.jpg",
+    "downloads": 1000000,
+    "category": "Productivity",
+    "rating": 4.8,
+    "description": "Magnet keeps your workspace organized by snapping windows into organized tiles.",
+    "features": [
+      "Window snapping",
+      "Keyboard shortcuts",
+      "Multi-display support"
+    ]
+  },
+  {
+    "id": "app006",
+    "name": "iA Writer",
+    "developer": "Information Architects GmbH",
+    "thumbnail": "https://i.ibb.co/k0Ndz8s/iawriter-thumb.png",
+    "banner": "https://i.ibb.co/D1NjsMC/iawriter-banner.jpg",
+    "downloads": 500000,
+    "category": "Writing",
+    "rating": 4.6,
+    "description": "iA Writer is a focused writing tool that helps you concentrate on your words.",
+    "features": [
+      "Distraction-free mode",
+      "Markdown support",
+      "Syntax highlighting"
+    ]
+  },
+  {
+    "id": "app007",
+    "name": "Raycast",
+    "developer": "Raycast",
+    "thumbnail": "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9a487b4a4763a4c7feece5bf8f45f962/raycast.png",
+    "banner": "https://i.ibb.co/vPS2Rwv/raycast-banner.jpg",
+    "downloads": 300000,
+    "category": "Utilities",
+    "rating": 4.9,
+    "description": "Raycast boosts your productivity with a command palette for your Mac.",
+    "features": [
+      "Quick app launcher",
+      "Clipboard manager",
+      "Custom scripts"
+    ]
+  },
+  {
+    "id": "app008",
+    "name": "Slack",
+    "developer": "Slack Technologies",
+    "thumbnail": "https://i.ibb.co/K7p1kY8/slack-thumb.png",
+    "banner": "https://i.ibb.co/MnM2nQD/slack-banner.jpg",
+    "downloads": 25000000,
+    "category": "Communication",
+    "rating": 4.6,
+    "description": "Slack brings team communication and collaboration into one place.",
+    "features": [
+      "Channels & threads",
+      "App integrations",
+      "Video and audio calls"
+    ]
+  },
+  {
+    "id": "app009",
+    "name": "Figma",
+    "developer": "Figma, Inc.",
+    "thumbnail": "https://i.ibb.co/z7HDzMv/figma-thumb.png",
+    "banner": "https://i.ibb.co/KhKhSbd/figma-banner.jpg",
+    "downloads": 10000000,
+    "category": "Design",
+    "rating": 4.8,
+    "description": "Figma is a collaborative interface design tool for teams.",
+    "features": [
+      "Real-time collaboration",
+      "Component system",
+      "Cloud-based editing"
+    ]
+  },
+  {
+    "id": "app010",
+    "name": "Alfred",
+    "developer": "Running with Crayons Ltd.",
+    "thumbnail": "https://i.ibb.co/hVjxqLG/alfred-thumb.png",
+    "banner": "https://i.ibb.co/2ZNt6zF/alfred-banner.jpg",
+    "downloads": 850000,
+    "category": "Productivity",
+    "rating": 4.7,
+    "description": "Alfred is a powerful launcher for macOS that boosts efficiency with hotkeys and text expansion.",
+    "features": [
+      "App launcher",
+      "Clipboard history",
+      "Workflow automation"
+    ]
+  }
+]

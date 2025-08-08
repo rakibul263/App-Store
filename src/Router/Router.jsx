@@ -6,13 +6,14 @@ const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
-    children:[
+    children: [
       {
-        index:true,
+        index: true,
         Component: Home,
-      }
-    ]
-  }
-])
+        loader: () => fetch("/AppData.json"),
+      },
+    ],
+  },
+]);
 
 export default router;
