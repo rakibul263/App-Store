@@ -17,7 +17,7 @@ const Navbar = () => {
               href="#"
               className="text-gray-700 hover:text-blue-600 font-medium"
             >
-              Home
+              All App
             </a>
             <a
               href="#"
@@ -35,7 +35,7 @@ const Navbar = () => {
               href="#"
               className="text-gray-700 hover:text-blue-600 font-medium"
             >
-              Contact
+              My Profile
             </a>
           </div>
           {/* Search + Login */}
