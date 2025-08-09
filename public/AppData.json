@@ -3,10 +3,10 @@
     "id": "app001",
     "name": "Programming Hero",
     "developer": "Programming Hero Ltd.",
-    "thumbnail": "https://static.c.realme.com/IN/wm-thread/1583106315008446464.jpg",
+    "thumbnail": "https://www.programming-hero.com/_next/image?url=%2FourCourses%2Fweb-thumbnail.png&w=3840&q=75",
     "banner": "https://i.ibb.co/vj5rT68/programming-hero-banner.jpg",
     "downloads": 3500000,
-    "category": "Education",
+    "category": "Educational",
     "rating": 4.8,
     "description": "Programming Hero is a fun and interactive way to learn programming. Whether you're a beginner or looking to brush up your skills, this app makes learning to code exciting and practical.",
     "features": [
@@ -16,10 +16,59 @@
     ]
   },
   {
+    "id": "app011",
+    "name": "Khan Academy",
+    "developer": "Khan Academy",
+    "thumbnail": "https://i.ytimg.com/vi/q935Ib1TxBY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDGMSdfh1d9XTVHpRtr3IkIhZXdQw",
+    "banner": "https://cdn.kastatic.org/images/khan-logo-vertical-transparent.png",
+    "downloads": 10000000,
+    "category": "Educational",
+    "rating": 4.9,
+    "description": "Free online courses and tutorials for various subjects.",
+    "features": [
+      "Video lessons",
+      "Practice exercises",
+      "Personalized learning"
+    ]
+  },
+  {
+    "id": "app012",
+    "name": "Coursera",
+    "developer": "Coursera Inc.",
+    "thumbnail": "https://slidebook.sfo3.cdn.digitaloceanspaces.com/media/slides/f313d7ac-8025-4017-a4c0-91da6711e0a9_1920w.jpg",
+    "banner": "https://about.coursera.org/static/logos/ba63c8e87e8f2f5e4c13c79f741f334d.png",
+    "downloads": 8000000,
+    "category": "Educational",
+    "rating": 4.7,
+    "description": "Access top university courses online.",
+    "features": [
+      "Certificate programs",
+      "Video lectures",
+      "Peer-graded assignments"
+    ]
+  },
+  {
+    "id": "app013",
+    "name": "Duolingo",
+    "developer": "Duolingo, Inc.",
+    "thumbnail": "https://play-lh.googleusercontent.com/TWqfRYSDWryVJ86qvWWgM_ab1JxmsOBbuhrcR2MfZ5WMjs6qeOHh-p1xYYdxt_pj7_a-qgcTcOoW7M9Qx3MX_g=w648-h364-rw",
+    "banner": "https://d35aaqx5ub95lt.cloudfront.net/images/duolingo-logo.png",
+    "downloads": 15000000,
+    "category": "Educational",
+    "rating": 4.8,
+    "description": "Learn new languages easily and for free.",
+    "features": [
+      "Gamified lessons",
+      "Speaking practice",
+      "Progress tracking"
+    ]
+  },
+
+  {
     "id": "app002",
     "name": "Notion",
     "developer": "Notion Labs, Inc.",
-    "thumbnail": "https://static.vecteezy.com/system/resources/previews/049/116/729/non_2x/notion-icon-on-transparent-background-free-png.png",
+    "thumbnail": "https://cdn.prod.website-files.com/5eea51a7e2d10b853f4385b9/63c3c2f585230bca582c78ca_639af96a3338af31aa6c348f_oPVH1qtol6ZwJzeYIljBu4Twv2t6N986Fv_HxfuAe70_hzq8i5.webp",
     "banner": "https://i.ibb.co/bsWHjgj/notion-banner.jpg",
     "downloads": 8000000,
     "category": "Productivity",
@@ -32,42 +81,10 @@
     ]
   },
   {
-    "id": "app003",
-    "name": "Visual Studio Code",
-    "developer": "Microsoft",
-    "thumbnail": "https://i.ibb.co/xDQjXJG/vscode-thumb.png",
-    "banner": "https://i.ibb.co/P4scNkx/vscode-banner.jpg",
-    "downloads": 15000000,
-    "category": "Development",
-    "rating": 4.7,
-    "description": "VS Code is a lightweight but powerful source code editor which runs on your desktop.",
-    "features": [
-      "Built-in Git support",
-      "Extensions marketplace",
-      "Debugging and IntelliSense"
-    ]
-  },
-  {
-    "id": "app004",
-    "name": "CleanShot X",
-    "developer": "CleanShot App",
-    "thumbnail": "https://cleanshot.com/img/ogimage.png",
-    "banner": "https://i.ibb.co/4Jx0zZG/cleanshot-banner.jpg",
-    "downloads": 120000,
-    "category": "Utilities",
-    "rating": 4.9,
-    "description": "The best screenshot and screen recording app for macOS.",
-    "features": [
-      "Scrolling screenshots",
-      "Screen recording",
-      "Annotation tools"
-    ]
-  },
-  {
     "id": "app005",
     "name": "Magnet",
     "developer": "CrowdCafé",
-    "thumbnail": "https://i.ibb.co/qjgVxVR/magnet-thumb.png",
+    "thumbnail": "https://cdn.mos.cms.futurecdn.net/J4yMCmTr7nUe43eJ3BvrgC.jpg",
     "banner": "https://i.ibb.co/GQ9C4v9/magnet-banner.jpg",
     "downloads": 1000000,
     "category": "Productivity",
@@ -79,6 +96,55 @@
       "Multi-display support"
     ]
   },
+  {
+    "id": "app010",
+    "name": "Alfred",
+    "developer": "Running with Crayons Ltd.",
+    "thumbnail": "https://is1-ssl.mzstatic.com/image/thumb/Purple/v4/71/dd/ef/71ddef1c-d96e-e610-76dd-76efdfb54e0b/mzl.rpowbaeo.png/643x0w.jpg",
+    "banner": "https://i.ibb.co/2ZNt6zF/alfred-banner.jpg",
+    "downloads": 850000,
+    "category": "Productivity",
+    "rating": 4.7,
+    "description": "Alfred is a powerful launcher for macOS that boosts efficiency with hotkeys and text expansion.",
+    "features": [
+      "App launcher",
+      "Clipboard history",
+      "Workflow automation"
+    ]
+  },
+  {
+    "id": "app026",
+    "name": "Todoist",
+    "developer": "Doist",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHzC0XRKV1INjK5_UP4UAoHxKyLBh_ROWBYUNb5z02jfhELhH1gJcbg_C-qQ8K_rykSFk&usqp=CAU",
+    "banner": "https://todoist.com/favicon.ico",
+    "downloads": 12000000,
+    "category": "Productivity",
+    "rating": 4.6,
+    "description": "Task manager and to-do list app.",
+    "features": [
+      "Task scheduling",
+      "Collaboration",
+      "Reminders"
+    ]
+  },
+  {
+    "id": "app027",
+    "name": "Evernote",
+    "developer": "Evernote Corporation",
+    "thumbnail": "https://evernote.com/favicon.ico",
+    "banner": "https://evernote.com/favicon.ico",
+    "downloads": 15000000,
+    "category": "Productivity",
+    "rating": 4.5,
+    "description": "Note taking and organization app.",
+    "features": [
+      "Note syncing",
+      "Web clipping",
+      "Document scanning"
+    ]
+  },
+
   {
     "id": "app006",
     "name": "iA Writer",
@@ -96,21 +162,119 @@
     ]
   },
   {
-    "id": "app007",
-    "name": "Raycast",
-    "developer": "Raycast",
-    "thumbnail": "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9a487b4a4763a4c7feece5bf8f45f962/raycast.png",
-    "banner": "https://i.ibb.co/vPS2Rwv/raycast-banner.jpg",
-    "downloads": 300000,
-    "category": "Utilities",
-    "rating": 4.9,
-    "description": "Raycast boosts your productivity with a command palette for your Mac.",
+    "id": "app014",
+    "name": "Scrivener",
+    "developer": "Literature & Latte",
+    "thumbnail": "https://www.literatureandlatte.com/images/scrivener_logo_600x600.png",
+    "banner": "https://www.literatureandlatte.com/images/scrivener_logo_600x600.png",
+    "downloads": 400000,
+    "category": "Writing",
+    "rating": 4.7,
+    "description": "Writing software for long documents and novels.",
     "features": [
-      "Quick app launcher",
-      "Clipboard manager",
-      "Custom scripts"
+      "Project management",
+      "Outlining tools",
+      "Research integration"
     ]
   },
+  {
+    "id": "app015",
+    "name": "Ulysses",
+    "developer": "The Soulmen GbR",
+    "thumbnail": "https://ulysses.app/assets/branding/ulysses-512.png",
+    "banner": "https://ulysses.app/assets/branding/ulysses-512.png",
+    "downloads": 350000,
+    "category": "Writing",
+    "rating": 4.8,
+    "description": "A clean and simple writing environment.",
+    "features": [
+      "Distraction-free mode",
+      "Cloud sync",
+      "Export options"
+    ]
+  },
+  {
+    "id": "app016",
+    "name": "Bear",
+    "developer": "Shiny Frog",
+    "thumbnail": "https://bear.app/images/bear-icon.png",
+    "banner": "https://bear.app/images/bear-icon.png",
+    "downloads": 300000,
+    "category": "Writing",
+    "rating": 4.7,
+    "description": "A beautiful, flexible writing app for notes and prose.",
+    "features": [
+      "Markdown support",
+      "Tagging",
+      "Cross-device sync"
+    ]
+  },
+
+  {
+    "id": "app003",
+    "name": "Visual Studio Code",
+    "developer": "Microsoft",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR54ZQ_talv4djRhE7lCM4PKN7zNxfwpNjU_A&s",
+    "banner": "https://i.ibb.co/P4scNkx/vscode-banner.jpg",
+    "downloads": 15000000,
+    "category": "Development",
+    "rating": 4.7,
+    "description": "VS Code is a lightweight but powerful source code editor which runs on your desktop.",
+    "features": [
+      "Built-in Git support",
+      "Extensions marketplace",
+      "Debugging and IntelliSense"
+    ]
+  },
+  {
+    "id": "app017",
+    "name": "JetBrains IntelliJ IDEA",
+    "developer": "JetBrains",
+    "thumbnail": "https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2025/07/intellij-logo.png?q=70&fit=contain&w=1200&h=628&dpr=1",
+    "banner": "https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea-logo.png",
+    "downloads": 4000000,
+    "category": "Development",
+    "rating": 4.8,
+    "description": "Java IDE for professional developers.",
+    "features": [
+      "Smart code completion",
+      "Refactoring tools",
+      "Debugger"
+    ]
+  },
+  {
+    "id": "app018",
+    "name": "Sublime Text",
+    "developer": "Sublime HQ",
+    "thumbnail": "https://woorkup.com/wp-content/uploads/2019/03/sublime-text-same-window-new-tab.png",
+    "banner": "https://www.sublimetext.com/images/logo.png",
+    "downloads": 3000000,
+    "category": "Development",
+    "rating": 4.6,
+    "description": "Lightweight and fast text editor.",
+    "features": [
+      "Goto Anything",
+      "Multiple selections",
+      "Command palette"
+    ]
+  },
+  {
+    "id": "app019",
+    "name": "Atom",
+    "developer": "GitHub",
+    "thumbnail": "https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2022/06/Atom-text-editor.jpg",
+    "banner": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Atom_Logo.png",
+    "downloads": 2500000,
+    "category": "Development",
+    "rating": 4.5,
+    "description": "Hackable text editor for the 21st century.",
+    "features": [
+      "Cross-platform",
+      "Package manager",
+      "Smart autocompletion"
+    ]
+  },
+
   {
     "id": "app008",
     "name": "Slack",
@@ -128,6 +292,55 @@
     ]
   },
   {
+    "id": "app020",
+    "name": "Microsoft Teams",
+    "developer": "Microsoft",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg",
+    "banner": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg",
+    "downloads": 12000000,
+    "category": "Communication",
+    "rating": 4.7,
+    "description": "Team collaboration and meetings platform.",
+    "features": [
+      "Video conferencing",
+      "Chat channels",
+      "File sharing"
+    ]
+  },
+  {
+    "id": "app021",
+    "name": "Zoom",
+    "developer": "Zoom Video Communications",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/8/88/Zoom_Communications_Logo.svg",
+    "banner": "https://upload.wikimedia.org/wikipedia/commons/8/88/Zoom_Communications_Logo.svg",
+    "downloads": 15000000,
+    "category": "Communication",
+    "rating": 4.5,
+    "description": "Video conferencing and chat platform.",
+    "features": [
+      "HD video calls",
+      "Screen sharing",
+      "Meeting recording"
+    ]
+  },
+  {
+    "id": "app022",
+    "name": "Discord",
+    "developer": "Discord Inc.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/98/Discord_logo.svg",
+    "banner": "https://upload.wikimedia.org/wikipedia/en/9/98/Discord_logo.svg",
+    "downloads": 10000000,
+    "category": "Communication",
+    "rating": 4.6,
+    "description": "Chat, voice, and video communication for communities and gamers.",
+    "features": [
+      "Voice channels",
+      "Text chat",
+      "Community servers"
+    ]
+  },
+
+  {
     "id": "app009",
     "name": "Figma",
     "developer": "Figma, Inc.",
@@ -144,19 +357,35 @@
     ]
   },
   {
-    "id": "app010",
-    "name": "Alfred",
-    "developer": "Running with Crayons Ltd.",
-    "thumbnail": "https://i.ibb.co/hVjxqLG/alfred-thumb.png",
-    "banner": "https://i.ibb.co/2ZNt6zF/alfred-banner.jpg",
-    "downloads": 850000,
-    "category": "Productivity",
+    "id": "app023",
+    "name": "Adobe XD",
+    "developer": "Adobe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Adobe_XD_CC_icon.svg/1024px-Adobe_XD_CC_icon.svg.png",
+    "banner": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Adobe_XD_CC_icon.svg/1024px-Adobe_XD_CC_icon.svg.png",
+    "downloads": 7000000,
+    "category": "Design",
     "rating": 4.7,
-    "description": "Alfred is a powerful launcher for macOS that boosts efficiency with hotkeys and text expansion.",
+    "description": "Design and prototype user experiences.",
     "features": [
-      "App launcher",
-      "Clipboard history",
-      "Workflow automation"
+      "Vector design tools",
+      "Prototyping",
+      "Collaboration"
+    ]
+  },
+  {
+    "id": "app024",
+    "name": "Sketch",
+    "developer": "Bohemian Coding",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Sketch_Logo.svg/1200px-Sketch_Logo.svg.png",
+    "banner": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Sketch_Logo.svg/1200px-Sketch_Logo.svg.png",
+    "downloads": 3500000,
+    "category": "Design",
+    "rating": 4.6,
+    "description": "Digital design toolkit.",
+    "features": [
+      "Vector editing",
+      "Symbols",
+      "Plugins"
     ]
   }
 ]

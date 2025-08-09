@@ -1,5 +1,6 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
@@ -8,13 +9,13 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-blue-600">AppStore</h1>
+            <NavLink to="/"  className="text-2xl font-bold text-blue-600">AppStore</NavLink>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:flex space-x-8">
             <a
-              href="#"
+              href="/"
               className="text-gray-700 hover:text-blue-600 font-medium"
             >
               All App
@@ -50,9 +51,9 @@ const Navbar = () => {
               <FaSearch className="absolute left-3 top-2 text-gray-400" />
             </div>
             {/* Auth Buttons */}
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-medium">
+            <NavLink to="/login" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-medium">
               Login
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>

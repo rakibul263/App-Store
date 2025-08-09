@@ -1,15 +1,18 @@
 import React from "react";
 import { useLoaderData } from "react-router";
 
-const TrendingApps = () => {
+const EducationalApp = () => {
   const apps = useLoaderData();
-  const topApps = [...apps].sort((a, b) => b.rating - a.rating).slice(0, 4);
+
+  const productivityApps = apps.filter((app) => app.category === "Educational");
+
+  const topApps = productivityApps
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 4);
 
   return (
     <section className="mt-10 mb-6">
-      <h2 className="text-3xl font-bold mb-6">
-        Trending Apps
-      </h2>
+      <h2 className="text-3xl font-bold mb-6">Educational Apps</h2>
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {topApps.map((app) => (
           <div
@@ -42,4 +45,4 @@ const TrendingApps = () => {
   );
 };
 
-export default TrendingApps;
+export default EducationalApp;
