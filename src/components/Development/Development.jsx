@@ -12,9 +12,7 @@ const Development = () => {
 
   return (
     <section className="mt-10 mb-6">
-      <h2 className="text-3xl font-bold mb-6">
-        Development Apps
-      </h2>
+      <h2 className="text-3xl font-bold mb-6">Development Apps</h2>
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {topApps.map((app) => (
           <div
