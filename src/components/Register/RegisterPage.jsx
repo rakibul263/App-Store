@@ -1,17 +1,27 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { NavLink } from "react-router";
+import { AuthContext } from "../../Provider/AuthContext";
 
 const RegisterPage = ({ onLoginClick }) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [success, setSuccess] = useState(false);
+  const { createUser, sendVerify } = use(AuthContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(
-      `Registering with\nName: ${name}\nEmail: ${email}\nPassword: ${password}`
-    );
-    // ekhane backend registration API call korte paren
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    createUser(email, password)
+      .then(() => {
+        sendVerify().then(() => {
+          setSuccess(true);
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    setSuccess("");
   };
 
   return (
@@ -27,7 +37,7 @@ const RegisterPage = ({ onLoginClick }) => {
             type="text"
             required
             placeholder="Enter your name"
-            value={name}
+            name="name"
             onChange={(e) => setName(e.target.value)}
             className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
@@ -40,8 +50,8 @@ const RegisterPage = ({ onLoginClick }) => {
             id="email"
             type="email"
             required
+            name="email"
             placeholder="Enter your email"
-            value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
@@ -53,9 +63,9 @@ const RegisterPage = ({ onLoginClick }) => {
           <input
             id="password"
             type="password"
+            name="password"
             required
             placeholder="Create a password"
-            value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
@@ -70,13 +80,19 @@ const RegisterPage = ({ onLoginClick }) => {
 
       <p className="mt-6 text-center text-gray-600">
         Already Have an account?{" "}
-        <NavLink to="/login"
+        <NavLink
+          to="/login"
           onClick={onLoginClick}
           className="text-blue-600 font-semibold hover:underline"
         >
           Please Login
         </NavLink>
       </p>
+      {success && (
+        <p className="text-green-400 text-center">
+          Verification email sent! Please check your inbox.
+        </p>
+      )}
     </div>
   );
 };
