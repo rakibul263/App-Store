@@ -1,8 +1,10 @@
-import React from "react";
+import React, { use } from "react";
 import { FaSearch } from "react-icons/fa";
 import { NavLink } from "react-router";
+import { AuthContext } from "../../Provider/AuthContext";
 
 const Navbar = () => {
+  const { user } = use(AuthContext);
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +54,7 @@ const Navbar = () => {
               to="/login"
               className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-medium"
             >
-              Login
+              {user ? "logout" : "login"}
             </NavLink>
           </div>
         </div>
