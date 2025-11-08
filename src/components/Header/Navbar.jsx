@@ -1,10 +1,20 @@
 import React, { use } from "react";
 import { FaSearch } from "react-icons/fa";
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../../Provider/AuthContext";
 
 const Navbar = () => {
-  const { user } = use(AuthContext);
+  const { user, logoutUser } = use(AuthContext);
+  const Navigate = useNavigate();
+
+  const navigateLogin = () => {
+    Navigate("/login");
+  };
+
+  const handleLogout = () => {
+    logoutUser();
+  }
+
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,13 +59,18 @@ const Navbar = () => {
               />
               <FaSearch className="absolute left-3 top-2 text-gray-400" />
             </div>
-            {/* Auth Buttons */}
-            <NavLink
-              to="/login"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-medium"
-            >
-              {user ? "logout" : "login"}
-            </NavLink>
+            {user ? (
+              <button className="btn btn-error rounded-4xl font-bold" onClick={handleLogout}>
+                Logout
+              </button>
+            ) : (
+              <button
+                className="btn btn-primary rounded-4xl font-bold"
+                onClick={navigateLogin}
+              >
+                Login
+              </button>
+            )}
           </div>
         </div>
       </div>

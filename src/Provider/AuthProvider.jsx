@@ -32,11 +32,18 @@ export default function AuthProvider({ children }) {
   };
 
   const sendVerify = () => {
+    setLoading(true);
     return sendEmailVerification(auth.currentUser);
   };
 
   const googleLogin = () => {
+    setLoading(true);
     return signInWithPopup(auth, googleProvider);
+  };
+
+  const logoutUser = () => {
+    setLoading(true);
+    return signOut(auth);
   };
 
   useEffect(() => {
@@ -56,6 +63,7 @@ export default function AuthProvider({ children }) {
     logOut,
     sendVerify,
     googleLogin,
+    logoutUser,
   };
 
   return (
