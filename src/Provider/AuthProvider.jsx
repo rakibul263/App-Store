@@ -27,11 +27,6 @@ export default function AuthProvider({ children }) {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  const logOut = () => {
-    setLoading(true);
-    return signOut(auth);
-  };
-
   const sendVerify = () => {
     setLoading(true);
     return sendEmailVerification(auth.currentUser);
@@ -66,7 +61,6 @@ export default function AuthProvider({ children }) {
     loading,
     createUser,
     loginUser,
-    logOut,
     sendVerify,
     googleLogin,
     logoutUser,
