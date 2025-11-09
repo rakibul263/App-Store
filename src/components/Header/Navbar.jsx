@@ -71,7 +71,7 @@ const Navbar = () => {
             onClick={() => navigate("/")}
             className="text-2xl font-bold text-blue-600 cursor-pointer"
           >
-            <img src={AppHubLogo} alt="" className="w-25 h-25" />
+            <img src={AppHubLogo} alt="" className="w-15 h-15" />
           </div>
           <div className="hidden lg:flex space-x-8">{links}</div>
           <div className="hidden lg:flex items-center gap-4">

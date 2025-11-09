@@ -1,10 +1,9 @@
-import { FaFacebookF,  FaInstagram, FaGithub } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-10 px-5 mt-[2rem]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Logo & About */}
         <div>
           <h2 className="text-2xl font-bold mb-4">AppStore</h2>
           <p className="text-sm">
@@ -12,8 +11,6 @@ const Footer = () => {
             Secure, fast, and always updated.
           </p>
         </div>
-
-        {/* Quick Links */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
@@ -39,8 +36,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
-        {/* Legal */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Legal</h3>
           <ul className="space-y-2 text-sm">
@@ -61,12 +56,14 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
-        {/* Social Media */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
+          <h3 className="text-lg font-semibold mb-3">Follow Developer</h3>
           <div className="flex gap-4 text-xl">
-            <a href="https://facebook.com/rakibul13631" target="_blank" rel="noreferrer">
+            <a
+              href="https://facebook.com/rakibul13631"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaFacebookF />
             </a>
             <a
