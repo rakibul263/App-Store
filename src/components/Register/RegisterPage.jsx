@@ -70,6 +70,7 @@ const RegisterPage = ({ onLoginClick }) => {
             id="password"
             type="password"
             name="password"
+            pattern="^(?=.*[A-Z])(?=.*[a-z]).{6,}$"
             required
             placeholder="Create a password"
             onChange={(e) => setPassword(e.target.value)}

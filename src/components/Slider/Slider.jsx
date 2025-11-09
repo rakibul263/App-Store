@@ -2,7 +2,7 @@ import React from "react";
 
 const Slider = () => {
   return (
-    <div className="carousel carousel-end rounded-box space-x-4">
+    <div className="carousel carousel-end rounded-box space-x-4 mt-10">
       {[
         "https://cdn.dribbble.com/userupload/34404051/file/original-0aa716cfb76b2556016ae38efb4e4283.png?resize=752x&vertical=center",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRGdlj7OWsk_HxZYuCdL9cQBcaKR_lVo0qw&s",

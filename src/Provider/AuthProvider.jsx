@@ -15,6 +15,7 @@ export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const googleProvider = new GoogleAuthProvider();
+  const [emailVerified, setEmailVerified] = useState(false);
 
   const createUser = (email, password) => {
     setLoading(true);
@@ -49,6 +50,11 @@ export default function AuthProvider({ children }) {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
+      if (currentUser) {
+        setEmailVerified(currentUser.emailVerified);
+      } else {
+        setEmailVerified(false);
+      }
       setLoading(false);
     });
 
@@ -64,6 +70,7 @@ export default function AuthProvider({ children }) {
     sendVerify,
     googleLogin,
     logoutUser,
+    emailVerified,
   };
 
   return (

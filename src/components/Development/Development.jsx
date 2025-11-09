@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 
 const Development = () => {
   const apps = useLoaderData();
@@ -15,9 +15,10 @@ const Development = () => {
       <h2 className="text-3xl font-bold mb-6">Development Apps</h2>
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {topApps.map((app) => (
-          <div
+          <Link
+            to={`/appDetails/${app.id}`}
             key={app.id}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 overflow-hidden"
+            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 overflow-hidden cursor-pointer"
           >
             <img
               src={app.thumbnail}
@@ -38,7 +39,7 @@ const Development = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
