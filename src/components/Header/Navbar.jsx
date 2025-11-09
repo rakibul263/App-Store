@@ -1,45 +1,48 @@
-import React, { use } from "react";
-import { FaSearch } from "react-icons/fa";
+import React, { useState, useContext } from "react";
 import { NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../../Provider/AuthContext";
-import "./Navbar.css";
+import { FaBars, FaTimes } from "react-icons/fa";
+import AppHubLogo from "../../assets/AppHub.png";
 
 const Navbar = () => {
-  const { user, logoutUser, emailVerified } = use(AuthContext);
+  const { user, logoutUser, emailVerified } = useContext(AuthContext);
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleLogout = () => {
-    navigate("/");
     logoutUser();
+    navigate("/");
   };
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const links = (
     <>
       <NavLink
         to="/"
         className={({ isActive }) =>
-          `font-bold hover:text-blue-600 ${
+          `font-semibold hover:text-blue-600 transition ${
             isActive ? "text-blue-600 border-b-2 border-blue-600" : ""
           }`
         }
       >
-        All App
+        All Apps
       </NavLink>
       <NavLink
         to="/trending"
         className={({ isActive }) =>
-          `font-bold hover:text-blue-600 ${
+          `font-semibold hover:text-blue-600 transition ${
             isActive ? "text-blue-600 border-b-2 border-blue-600" : ""
           }`
         }
       >
-        Trending Apps
+        Trending
       </NavLink>
       {emailVerified && (
         <NavLink
           to="/profile"
           className={({ isActive }) =>
-            `font-bold hover:text-blue-600 ${
+            `font-semibold hover:text-blue-600 transition ${
               isActive ? "text-blue-600 border-b-2 border-blue-600" : ""
             }`
           }
@@ -50,7 +53,7 @@ const Navbar = () => {
       <NavLink
         to="/about"
         className={({ isActive }) =>
-          `font-bold hover:text-blue-600 ${
+          `font-semibold hover:text-blue-600 transition ${
             isActive ? "text-blue-600 border-b-2 border-blue-600" : ""
           }`
         }
@@ -68,38 +71,59 @@ const Navbar = () => {
             onClick={() => navigate("/")}
             className="text-2xl font-bold text-blue-600 cursor-pointer"
           >
-            AppStore
+            <img src={AppHubLogo} alt="" className="w-25 h-25" />
           </div>
           <div className="hidden lg:flex space-x-8">{links}</div>
-
-          <div className="flex items-center gap-4">
-            <div className="relative hidden sm:block">
-              <input
-                type="text"
-                placeholder="Search apps..."
-                className="border rounded-full px-4 py-1 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <FaSearch className="absolute left-3 top-2 text-gray-400" />
-            </div>
-
+          <div className="hidden lg:flex items-center gap-4">
             {emailVerified ? (
               <button
                 onClick={handleLogout}
-                className="bg-red-500 hover:bg-red-600 text-white font-bold px-4 py-1 rounded-full"
+                className="bg-red-500 hover:bg-red-600 text-white font-bold px-4 py-1 rounded-full transition"
               >
                 Logout
               </button>
             ) : (
               <button
                 onClick={() => navigate("/login")}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-1 rounded-full"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-1 rounded-full transition"
+              >
+                Login
+              </button>
+            )}
+          </div>
+          <div className="lg:hidden flex items-center">
+            <button onClick={toggleMenu}>
+              {menuOpen ? (
+                <FaTimes className="text-2xl text-gray-700" />
+              ) : (
+                <FaBars className="text-2xl text-gray-700" />
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+      {menuOpen && (
+        <div className="lg:hidden bg-white shadow-md border-t px-4 py-4 space-y-3">
+          <div className="flex flex-col gap-2">{links}</div>
+          <div className="mt-3">
+            {emailVerified ? (
+              <button
+                onClick={handleLogout}
+                className="w-full bg-red-500 hover:bg-red-600 text-white font-bold px-4 py-2 rounded-full transition"
+              >
+                Logout
+              </button>
+            ) : (
+              <button
+                onClick={() => navigate("/login")}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-full transition"
               >
                 Login
               </button>
             )}
           </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 };

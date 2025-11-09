@@ -49,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/appDetails/:id/review",
-        Component: (
+        element: (
           <PrivateRouters>
             <Review></Review>
           </PrivateRouters>

@@ -67,7 +67,6 @@ export default function AppDetails() {
         {installed && (
           <Link
             to={`/appDetails/${app.id}/review`}
-            target="_blank"
             rel="noopener noreferrer"
             className="block text-center mt-4 w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all duration-300"
           >
