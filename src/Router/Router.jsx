@@ -10,6 +10,7 @@ import AppDetails from "../components/AppDetails/AppDetails";
 import Review from "../components/Review/Review";
 import TrendingApps from "../components/TrendingApps/TrendingApps";
 import About from "../components/About/About";
+import NotAvailable from "../components/NotAvailable/NotAvailable";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         Component: About,
+      },
+      {
+        path: "/notavailable",
+        Component: NotAvailable,
       },
       {
         path: "/appDetails/:id",

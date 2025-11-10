@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const AppStoreInfo = () => {
   return (
@@ -18,20 +19,9 @@ const AppStoreInfo = () => {
         Explore thousands of amazing apps. Download now and enjoy exclusive
         features!
       </p>
-      <button
-        style={{
-          marginTop: "10px",
-          backgroundColor: "#0070f3",
-          color: "white",
-          border: "none",
-          padding: "10px 20px",
-          borderRadius: "5px",
-          cursor: "pointer",
-          fontWeight: "bold",
-        }}
-      >
+      <NavLink className="btn btn-primary mt-5" to="/notavailable">
         Explore Apps
-      </button>
+      </NavLink>
     </section>
   );
 };
